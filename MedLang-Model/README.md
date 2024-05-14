@@ -21,4 +21,5 @@
 
 MedLang-13B SFT Data:[ https://drive.google.com/file/d/1lF95g_Mnl_uoU7svsYT-Ft5wNT68ARay/view?usp=drive_link
 ](https://drive.google.com/file/d/1nc6ritiuU1ZfuCoRlbQ7uLGvV1bUhD6U/view?usp=drive_link)
+
 MedLang-13B Model:https://pan.baidu.com/s/1xlEvI0MWdYzPp84KIEwysg (8z2y)
