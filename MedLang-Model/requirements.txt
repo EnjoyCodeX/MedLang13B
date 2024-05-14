@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2978f171e7576afb366d256c7cd92572b8534fcc14ced2625b7a679ef5ec168
+size 111
+=======
+torch
+transformers>=4.37.2
+accelerate>=0.21.0
+colorama
+cpm_kernels
+sentencepiece
+transformers_stream_generator
+>>>>>>> cdf77237dbde4d726b04054648ecfe983fb177ad
