@@ -1,0 +1,77 @@
+{% extends 'DrugInfo/layout.html' %}
+{% block title %}
+<title>西药列表</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div style="float: right; width: 300px; margin-top: 5px;">
+        <form method="get">
+            <div class="input-group">
+                <input type="text" name="query" class="form-control" placeholder="药物名称"
+                    value="{{ search_data }}">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true" style="margin-right: 5px;"></span>
+                <span>西药列表</span>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>药物名称</th>
+                        <th>图片</th>
+                        <th>成份</th>
+                        <th>适应症</th>
+                        <th>禁忌</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for obj in page_data %}
+                    <tr>
+                        <th>{{ obj.id }}</th>
+                        <td>{{ obj.med_name }}</td>
+                        <td><img src="/{{ obj.med_pic }}"  style="width: 100px;height: 100px;"/></td>
+                        <td>{{ obj.med_ingredience }}</td>
+                        <td>{{ obj.med_use }}</td>
+                        <td>{{ obj.med_warn }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div style="text-align: center;" >
+        <ul class="pagination">
+            {{ page_string }}
+        </ul>
+        <br>
+        
+        <form method="get">
+            <div style="display:inline-block; width: 150px;">
+                <div class="input-group">
+                    <span> <input type="text" class="form-control" placeholder="请输入页码" name="page"></span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">跳转</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
