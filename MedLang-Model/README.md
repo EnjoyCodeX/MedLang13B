@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:81e9a5c94e917c73d6625c125f5d7bc8180d355d99f1b956022cee828753e93b
-size 874
-=======
 ## 部署
 
 1. 安装项目依赖环境
@@ -25,4 +20,3 @@ size 874
    ```
 
 MedLang-13B SFT Data: https://drive.google.com/file/d/1lF95g_Mnl_uoU7svsYT-Ft5wNT68ARay/view?usp=drive_link
->>>>>>> cdf77237dbde4d726b04054648ecfe983fb177ad
