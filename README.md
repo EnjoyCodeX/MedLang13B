@@ -1,7 +1,5 @@
 ## MedLang-13B
 
-基于Baichuan-13B的基础模型
-
 ##### 医疗数据集
 
 ![MedInfo](./image/MedInfo.png)
