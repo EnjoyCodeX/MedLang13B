@@ -60,7 +60,6 @@ def westdrugdb(request):
     return render(request, "DrugInfo/westdrugdb.html", context)
 
 def chat(request):
-    pass
     return render(request, 'chat.html')
 
 def error(request):

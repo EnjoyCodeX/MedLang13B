@@ -23,6 +23,20 @@
 	<!-- Site Main Style Sheet Css -->
 	<link href="static/css/style.css" rel="stylesheet">
 	<link href="static/css/responsive.css" rel="stylesheet">
+	<style>
+		.large-image-container {
+			position: absolute;
+			top: 0;
+			right: 100%; /* 将大图像容器定位到图片容器的左侧 */
+			display: none; /* 默认隐藏 */
+			z-index: 999; /* 确保大图像在其他内容之上 */
+		}
+
+		.large-image-container img {
+			max-width: 250px; /* 控制大图像的最大宽度 */
+			height: auto;
+		}
+	</style>
 </head>
 
 <body>
@@ -77,8 +91,8 @@
 						<li class="nav-item"><a class="nav-link js-scroll" href="about">About</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll" href="team">Team</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll" href="review">Review</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll" href="chdrugdb">DrugDB</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll" href="Med-Chat">Chat</a></li>
+						<!-- <li class="nav-item"><a class="nav-link js-scroll" href="chdrugdb">DrugDB</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll" href="chat">Chat</a></li> -->
 						<li class="nav-item"><a class="nav-link js-scroll" href="issue">issue</a></li>
 					</ul>
                 </div>
@@ -94,11 +108,11 @@
 				<div class="col-lg-8 offset-lg-2 col-md-12">
 					<div class="home-content z-index position-relative">
 						<h3>MedLang-Chat for your health</br></h3>
-						<h1></h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud consectetur adipiscing elit.</p>
+						<!-- <h1>MedLang function?</h1> -->
+						<p>details about MedLang-Chat?</p>
 						<div class="home-button-box">
-							<a href="#" class="button home-btn-1 js-scroll">Our Services</a>
-							<a href="#" class="button home-btn-2">Repair My Device</a>
+							<a href="chdrugdb" class="button home-btn-1 js-scroll">Drug</a>
+							<a href="chat" class="button home-btn-2">Chat</a>
 						</div>
 					</div>
 				</div>
@@ -115,8 +129,8 @@
 						<div class="mini-feature-icon">	<i class="ti-stats-up"></i>
 						</div>
 						<div class="mini-feature-info">
-							<h6>Fast & Quick Repairs</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							<h6>advantage1?</h6>
+							<p>details?</p>
 						</div>
 					</div>
 				</div>
@@ -125,8 +139,8 @@
 						<div class="mini-feature-icon">	<i class="ti-user"></i>
 						</div>
 						<div class="mini-feature-info">
-							<h6>Great Customer Service</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							<h6>advantage2?</h6>
+							<p>details?</p>
 						</div>
 					</div>
 				</div>
@@ -135,8 +149,8 @@
 						<div class="mini-feature-icon">	<i class="ti-game"></i>
 						</div>
 						<div class="mini-feature-info">
-							<h6>Wholesale Parts</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							<h6>advantage3?</h6>
+							<p>details?</p>
 						</div>
 					</div>
 				</div>
@@ -145,8 +159,8 @@
 						<div class="mini-feature-icon">	<i class="ti-money"></i>
 						</div>
 						<div class="mini-feature-info">
-							<h6>Lowest Price Guarantee</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							<h6>advantage4?</h6>
+							<p>details?</p>
 						</div>
 					</div>
 				</div>
@@ -160,101 +174,89 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h5>Choose Your Device</h5>
-						<h2>Quick Repair Services</h2>
+						<h5>Model Evaluation</h5>
+						<!-- <h2></h2> -->
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<a href="#" class="single-services-box">
+					<a class="single-services-box">
 						<div class="services-img">
-							<img src="static/picture/services-1.png" alt="Service Images">
+							<img src="static/image/MLEC-QA-Zero-shot.png" style="height: 100px;width: 100px;"/>
 						</div>
-						<h3>iPhone Repair</h3>
+						<div class="large-image-container">
+							<img src="static/image/MLEC-QA-Zero-shot.png"/>
+						</div>
+						<h3>MLEC-QA Zero-shot</h3>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="#" class="single-services-box">
+					<a class="single-services-box">
 						<div class="services-img">
-							<img src="static/picture/services-2.png" alt="Service Images">
+							<img src="static/image/MLEC-QA-Few-shot.png" style="height: 100px;width: 100px;"/>
 						</div>
-						<h3>Smartphone Repair</h3>
+						<div class="large-image-container">
+							<img src="static/image/MLEC-QA-Few-shot.png"/>
+						</div>
+						<h3>MLEC-QA Few-shot</h3>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="#" class="single-services-box">
+					<a class="single-services-box">
 						<div class="services-img">
-							<img src="static/picture/services-3.png" alt="Service Images">
+							<img src="static/image/cmb.png" style="height: 100px;width: 100px;"/>
 						</div>
-						<h3>Computer Repair</h3>
+						<div class="large-image-container">
+							<img src="static/image/cmb.png"/>
+						</div>
+						<h3>CMB</h3>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="#" class="single-services-box">
+					<a class="single-services-box">
 						<div class="services-img">
-							<img src="static/picture/services-4.png" alt="Service Images">
+							<img src="static/image/cmd.png" style="height: 100px;width: 100px;"/>
 						</div>
-						<h3>Tablet Repair​</h3>
+						<div class="large-image-container">
+							<img src="static/image/cmd.png"/>
+						</div>
+						<h3>CMD</h3>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="#" class="single-services-box">
+					<a class="single-services-box">
 						<div class="services-img">
-							<img src="static/picture/services-5.png" alt="Service Images">
+							<img src="static/image/cmid.png" style="height: 100px;width: 100px;"/>
 						</div>
-						<h3>Gaming Console</h3>
+						<div class="large-image-container">
+							<img src="static/image/cmid.png"/>
+						</div>
+						<h3>CMID</h3>
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-6">
+				<!-- <div class="col-lg-4 col-md-6">
 					<a href="#" class="single-services-box">
 						<div class="services-img">
 							<img src="static/picture/services-6.png" alt="Service Images">
 						</div>
-						<h3>Others Services</h3>
+						<h3>medicaltest6?</h3>
 					</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
 	<!-- End Services Section -->
 
-	<!-- Start About Section -->
-	<section id="about" class="about-area bg-gray section-padding">
-		<div class="container">
-			<div class="row d-flex align-items-center">
-				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="about-image-wrapper">
-						<img src="static/picture/about.jpg" alt="About image">
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="about-content">
-						<div class="about-content-text">
-							<h5>Who We Are</h5> 
-							<h2>Fast Service at Computer & Phone Repair</h2>
-							<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<h3>Why Trust Us?</h3>
-							<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							
-							<a href="#" class="button">Contact Us</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End About Section -->
-
 	<!-- Start Choose Section -->
-	<section class="choose-area pt-100">
+	<!-- <section class="choose-area pt-100">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12 col-sm-12">
 					<div class="choose-content">
 						<div class="choose-content-info">
-							<h2>We Can Fix Anything</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consectetur adipiscing elit.</p>
+							<h2>clinic?</h2>
+							<p>details?</p>
 						</div>
 						<div class="choose-content-list">
 							<div class="row">
@@ -287,7 +289,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Choose Section -->
 	
 	<!-- Start Team Section -->
@@ -296,27 +298,29 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h5>Experts on Repairs</h5>
+						<h5>Team</h5>
 						<h2>Meet Team</h2>
 					</div>
 				</div>
+				
 				<div class="col-lg-3 col-md-6">
 					<div class="single-team-box">
 						<div class="team-image">
-							<img src="static/picture/team-1.jpg" alt="team">
-							<div class="team-social-icon">
+							<img src="static/image/team1.jpg" />
+							<!-- <div class="team-social-icon">
 								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
 								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
 								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 						</div>
 						<div class="team-info">
-							<h3>Ava Farrington</h3>
-							<span>Founder, ceo</span>
+							<h3>Huang chiang</h3>
+							<span>Founder</span>
 						</div>
 					</div>
+					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<!-- <div class="col-lg-3 col-md-6">
 					<div class="single-team-box">
 						<div class="team-image">
 							<img src="static/picture/team-2.jpg" alt="team">
@@ -363,7 +367,7 @@
 							<span>Project Manager</span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -380,7 +384,7 @@
 								<span class="counter-number">12</span>
 								<span>+</span>
 							</h2>
-							<h3 class="counter-heading">Years of Experience</h3>
+							<h3 class="counter-heading">Model details?</h3>
 						</div>
 					</div>
 				</div>
@@ -423,7 +427,7 @@
 	<!-- End Counter Section -->
 	
 	<!-- Start Testimonials Section -->
-	<section id="review" class="testimonial-area section-padding">
+	<!-- <section id="review" class="testimonial-area section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -436,9 +440,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="testimonial-slide">
-						<div class="owl-carousel owl-theme">
+						<div class="owl-carousel owl-theme"> -->
 							<!-- testimonials item -->
-							<div class="single-testimonial">
+							<!-- <div class="single-testimonial">
 								<div class="testimonial-content-inner">
 									<div class="testimonial-text">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
@@ -463,9 +467,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- testimonials item -->
-							<div class="single-testimonial">
+							<!-- <div class="single-testimonial">
 								<div class="testimonial-content-inner">
 									<div class="testimonial-text">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
@@ -490,9 +494,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- testimonials item -->
-							<div class="single-testimonial">
+							<!-- <div class="single-testimonial">
 								<div class="testimonial-content-inner">
 									<div class="testimonial-text">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
@@ -518,8 +522,8 @@
 									</div>
 								</div>
 							</div>
-							<!-- testimonials item -->
-							<div class="single-testimonial">
+							< testimonials item -->
+							<!-- <div class="single-testimonial">
 								<div class="testimonial-content-inner">
 									<div class="testimonial-text">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
@@ -550,11 +554,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --> 
 	<!-- End Testimonials Section -->
 
 	<!-- Start Blog Section -->
-	<section id="blog" class="blog-area bg-gray section-padding">
+	<!-- <section id="blog" class="blog-area bg-gray section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -645,9 +649,35 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Blog Section -->
 	
+	<!-- Start About Section -->
+	<section id="about" class="about-area bg-gray section-padding">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="about-image-wrapper">
+						<img src="static/picture/about.jpg" alt="About image">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="about-content">
+						<div class="about-content-text">
+							<h5>Who We Are</h5> 
+							<h2>who I am?</h2>
+							<p>details?</p>
+							<h3>Why Trust Us?</h3>
+							<p>details?</p>
+							<!-- <a href="#" class="button">Contact Us?need a form?</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Section -->
+
 	<!-- Start Contact Section -->
 	<section id="contact" class="contact-area section-padding">
 		<div class="container">
@@ -732,8 +762,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h5>Trusted Partner</h5>
-						<h2>Our Partners</h2>
+						<h5>Useful Link</h5>
+						<!-- <h2>Our Partners</h2> -->
 					</div>
 				</div>
 			</div>
@@ -767,12 +797,12 @@
     </div>
 	<!-- End Partner Logo Section -->
 	<!-- Start Footer Section -->
-	<footer class="footer-area">
+	<!-- <footer class="footer-area">
 		<div class="footer-top-area">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-6 footer-box-item">
-						<div class="footer-content">
+					<div class="col-lg-4 col-md-6 footer-box-item"> -->
+						<!-- <div class="footer-content">
 							<img src="static/picture/logo.png" alt="Brand">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim.</p>
 							<ul class="footer-social">
@@ -781,8 +811,8 @@
 								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 							</ul>
-						</div>
-					</div>
+						</div> -->
+					<!-- </div>
 					<div class="col-lg-4 col-md-6 footer-box-item">
 						<div class="footer-content mid-content">
 							<h3>Usefull Link</h3>
@@ -824,7 +854,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<!-- End Footer Section -->
 	
 	<!-- Start Back to Top -->
@@ -839,6 +869,28 @@
 	<script src="static/js/plugins.js"></script>
 	<!--Site Main Custom Js-->
 	<script src="static/js/main.js"></script>
+	<script >
+		// 找到所有包含图片的容器
+		const imageContainers = document.querySelectorAll('.services-img');
+
+		// 遍历每个图片容器
+		imageContainers.forEach(container => {
+			// 找到容器内的大图像容器
+			const largeImageContainer = container.nextElementSibling;
+
+			// 当鼠标进入图片容器时
+			container.addEventListener('mouseenter', () => {
+				// 显示大图像容器
+				largeImageContainer.style.display = 'block';
+			});
+
+			// 当鼠标离开图片容器时
+			container.addEventListener('mouseleave', () => {
+				// 隐藏大图像容器
+				largeImageContainer.style.display = 'none';
+			});
+		});
+	</script>	
 </body>
 
 </html>

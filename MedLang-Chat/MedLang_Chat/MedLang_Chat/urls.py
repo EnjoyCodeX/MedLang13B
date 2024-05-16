@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Chat import views
+from django.views import static
+from django.conf import settings
+from django.urls import re_path as url 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    url(r'^static/(?P<path>.*)$', static.serve,
+      {'document_root': settings.STATIC_ROOT}, name='static'),
     path('', views.index),
     # path('login/',views.login),
     path('chdrugdb/',views.chdrugdb),

@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     {% block title %}{% endblock %}
-	<link rel="icon" href="/static/image/Healthicons.png" type="image/x-icon">
-    <link rel="stylesheet" href="/static/plugins/bootstrap-3.4.1/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/plugins/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="icon" href="{% static 'image/Healthicons.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.css' %}">
 
     <style>
         .navbar {
@@ -37,6 +38,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="..\chdrugdb">中药列表</a></li>
                     <li><a href="..\westdrugdb">西药列表</a></li>
+                    <li><a href="..\chat">AI问诊</a></li>
                     <li><a href="..\">主页</a></li>
                 </ul>
                 <!-- <ul class="nav navbar-nav navbar-right">
