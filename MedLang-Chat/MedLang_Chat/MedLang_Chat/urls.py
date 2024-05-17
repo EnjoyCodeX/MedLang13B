@@ -30,6 +30,6 @@ urlpatterns = [
     path('chdrugdb/',views.chdrugdb),
     path('westdrugdb/',views.westdrugdb),
     path('chat/', views.chat),
-    path('error/',views.error),
+    path('error/',views.error404),
     path('issue/',views.issue),
 ]

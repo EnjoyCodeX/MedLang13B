@@ -62,9 +62,9 @@ def westdrugdb(request):
 def chat(request):
     return render(request, 'chat.html')
 
-def error(request):
+def error404(request):
     pass
-    return render(request, 'error.html')
+    return render(request, '404.html')
 
 def issue(request):
     pass
